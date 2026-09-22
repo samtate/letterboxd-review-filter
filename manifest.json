@@ -2,10 +2,11 @@
   "manifest_version": 3,
   "name": "Letterboxd Review Filter",
   "version": "0.1.0",
-  "description": "Collapses likely joke reviews on Letterboxd using local, conservative rules.",
+  "description": "Hide short and low-substance reviews in Letterboxd feeds.",
+  "homepage_url": "https://github.com/samtate/letterboxd-review-filter",
   "browser_specific_settings": {
     "gecko": {
-      "id": "letterboxd-review-filter@example.local",
+      "id": "letterboxd-review-filter@samtate.github.io",
       "strict_min_version": "109.0"
     }
   },
