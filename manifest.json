@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Letterboxd Review Filter",
+  "version": "0.1.0",
+  "description": "Collapses likely joke reviews on Letterboxd using local, conservative rules.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "letterboxd-review-filter@example.local",
+      "strict_min_version": "109.0"
+    }
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Letterboxd Review Filter",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://letterboxd.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

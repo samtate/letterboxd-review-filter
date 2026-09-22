@@ -1,0 +1,55 @@
+.lb-review-filter-notice {
+  align-items: center;
+  background: rgba(41, 50, 58, 0.55);
+  border: 1px solid rgba(137, 157, 173, 0.25);
+  border-radius: 3px;
+  color: #9ab;
+  display: flex;
+  font: 12px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  gap: 0.6rem;
+  box-sizing: border-box;
+  margin: 0.4rem 0;
+  max-width: 520px;
+  min-height: 42px;
+  min-width: 320px;
+  padding: 0.55rem 0.7rem;
+  width: 100%;
+}
+
+.lb-review-filter-notice button {
+  background: transparent;
+  border: 0;
+  color: #40bcf4;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0;
+}
+
+.lb-review-filter-notice button:hover,
+.lb-review-filter-notice button:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.lb-review-filter-notice--subtle {
+  background: transparent;
+  border-color: transparent;
+  color: #657580;
+  min-height: 0;
+  min-width: 0;
+  padding: 0.15rem 0;
+}
+
+.lb-review-filter-collapsed > .avatar {
+  display: none !important;
+}
+
+.lb-review-filter-collapsed > .body > :not(.lb-review-filter-notice) {
+  display: none !important;
+}
+
+.lb-review-filter-collapsed > .body {
+  display: block !important;
+  margin-left: 0 !important;
+}

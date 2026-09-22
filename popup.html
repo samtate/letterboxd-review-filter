@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letterboxd Review Filter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Review filter</h1>
+      <label class="switch"><input id="enabled" type="checkbox"><span>Hide short and low-substance reviews</span></label>
+      <label for="threshold">Strictness <output id="threshold-value">4</output></label>
+      <input id="threshold" type="range" min="3" max="6" step="1" value="4">
+      <label for="short-review-word-limit">Hide reviews at or below <output id="short-review-word-limit-value">20</output> words</label>
+      <input id="short-review-word-limit" type="range" min="0" max="40" step="1" value="20">
+      <p>Reload the Letterboxd tab after changing a setting.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
